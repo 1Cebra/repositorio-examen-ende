@@ -1,5 +1,8 @@
 package Evaluacion2;
 
+//COMENTARIO EN NUEVA RAMA
+
+
 /**
  * Esta clase incluye elementos para sumar los números de un array, devolver el
  * mayor o encontrar la posicion de uno pasado por param
@@ -19,6 +22,7 @@ public class TablaEnteros {
 			throw new IllegalArgumentException("No hay elementos");
 		this.tabla = tabla;
 	}
+	
 
 	/**
 	 * En este metodo se realiza la suma de los valores incluidos en el array.
