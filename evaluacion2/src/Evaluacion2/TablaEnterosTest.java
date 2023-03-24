@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class TablaEnterosTest {
@@ -34,8 +35,21 @@ class TablaEnterosTest {
 	}
 	
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void mayorTablaTest() {
+		int valorEsperado=5;
+		int resultado;
+		
+		assertEquals(valorEsperado, resultado=tabla.mayorTabla() );
+	}
+	
+	@ParameterizedTest
+	@CsvSource({"2,1","9"})
+	@Test
+	void posicionTabla(int n, int pos) {
+		int valorEsperado;
+		int resultado;
+		
+		assertEquals(pos, resultado=tabla.posicionTabla(n) );
 	}
 
 }
